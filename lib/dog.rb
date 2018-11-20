@@ -87,4 +87,7 @@ def self.find_by_name(name)
   dog = Dog.new(id: info[0], name: info[1], breed:info[2])
 end
 
+def update
+end
+
 end
