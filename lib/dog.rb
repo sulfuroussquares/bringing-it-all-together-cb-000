@@ -73,7 +73,7 @@ def self.find_or_create_by(name:, breed:)
   dog
 end
 
-def self.new_from_db
+def self.new_from_db(row)
   sql = <<-SQL
   SELECT * FROM dogs
   WHERE name = (?)
