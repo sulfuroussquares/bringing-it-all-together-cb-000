@@ -53,7 +53,7 @@ def self.find_by_id(id)
   WHERE id = (?)
   SQL
   info = DB[:conn].execute(sql, id)[0]
-  Dog.new(id: info[0])
+  Dog.new(id: info[0], name: info[1], breed:info[2])
 end
 
 
