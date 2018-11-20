@@ -31,7 +31,8 @@ end
 
 def save
   sql = <<-SQL
-  DROP TABLE dogs
+  INSERT INTO dogs (name, breed)
+  VALUES (?, ?)
   SQL
   self
 end
