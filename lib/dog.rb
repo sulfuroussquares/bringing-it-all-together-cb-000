@@ -52,6 +52,7 @@ def self.find_by_id
   SELECT * FROM dogs
   WHERE id = (?)
   SQL
+  info = DB[:conn].execute(sql, id)
 end
 
 
