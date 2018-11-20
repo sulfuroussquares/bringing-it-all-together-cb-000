@@ -41,5 +41,8 @@ def save
   self
 end
 
+def create
+end
+
 
 end
