@@ -7,5 +7,9 @@ def initialize(name:, breed:, id: nil)
   @id = id
 end
 
+def id
+  @id
+end
+
 
 end
