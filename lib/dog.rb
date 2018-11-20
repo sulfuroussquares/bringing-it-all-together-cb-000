@@ -70,6 +70,7 @@ def self.find_or_create_by(name:, breed:)
   else #if the record doesn't exist, let's create it
     dog = self.create(name: name, breed: breed)
   end
+  dog
 end
 
 end
