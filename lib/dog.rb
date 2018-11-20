@@ -34,6 +34,7 @@ def save
   INSERT INTO dogs (name, breed)
   VALUES (?, ?)
   SQL
+  DB[:conn].execute(sql, @name, @breed)
   self
 end
 
