@@ -11,7 +11,7 @@ def id
   @id
 end
 
-def create_table
+def self.create_table
 end
 
 
