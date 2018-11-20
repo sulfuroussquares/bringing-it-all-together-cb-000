@@ -41,7 +41,8 @@ def save
   self
 end
 
-def self.create
+def self.create(name:, breed:, id: nil)
+  
 end
 
 
