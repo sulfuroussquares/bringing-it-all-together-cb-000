@@ -67,7 +67,8 @@ def self.find_or_create_by(name:, breed:)
   if !info.empty? #if a record exists, return an object of it
     info = info[0]
     dog = Dog.new(id: info[0], name: info[1], breed:info[2])
-  else
+  else #if the record doesn't exist, let's create it
+    
   end
 end
 
