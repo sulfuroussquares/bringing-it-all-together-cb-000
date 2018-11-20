@@ -47,5 +47,7 @@ def self.create(name:, breed:, id: nil)
   dog
 end
 
+def self.find_by_id
+
 
 end
