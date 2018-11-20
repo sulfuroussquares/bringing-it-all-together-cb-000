@@ -66,7 +66,7 @@ def self.find_or_create_by(name:, breed:)
   info = DB[:conn].execute(sql, name, breed)
   if !info.empty? #if a record exists, return an object of it
     info = info[0]
-    Dog = Dog.new(id: info[0], name: info[1], breed:info[2])
+    dog = Dog.new(id: info[0], name: info[1], breed:info[2])
   else
   end
 end
