@@ -48,6 +48,12 @@ def self.create(name:, breed:, id: nil)
 end
 
 def self.find_by_id
+  sql = <<-SQL
+  SELECT * FROM dogs
+  WHERE id = (?)
+  VALUES (?, ?)
+  SQL
+end
 
 
 end
