@@ -73,4 +73,7 @@ def self.find_or_create_by(name:, breed:)
   dog
 end
 
+def self.new_from_db
+end
+
 end
