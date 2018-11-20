@@ -56,5 +56,7 @@ def self.find_by_id(id)
   Dog.new(id: info[0], name: info[1], breed:info[2])
 end
 
+def self.find_or_create_by
+end
 
 end
