@@ -93,7 +93,7 @@ def update
   SET name = (?), breed = (?)
   WHERE id = (?)
   SQL
-  info = DB[:conn].execute(sql, name, breed, id)
+  info = DB[:conn].execute(sql, @name, @breed, @id)
 end
 
 end
