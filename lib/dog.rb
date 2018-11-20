@@ -83,6 +83,8 @@ def self.find_by_name(name)
   WHERE name = (?)
   SQL
   info = DB[:conn].execute(sql, name)
+  info = info[0]
+  dog = Dog.new(id: info[0], name: info[1], breed:info[2])
 end
 
 end
