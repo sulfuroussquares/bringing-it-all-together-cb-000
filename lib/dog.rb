@@ -30,6 +30,9 @@ def self.drop_table
 end
 
 def save
+  sql = <<-SQL
+  DROP TABLE dogs
+  SQL
   self
 end
 
