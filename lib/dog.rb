@@ -64,7 +64,7 @@ def self.find_or_create_by(name:, breed:)
   breed = (?)
   SQL
   info = DB[:conn].execute(sql, name, breed)
-  if !info.empty?
+  if !info.empty? #if a record exists, return an object of it
   else
   end
 end
