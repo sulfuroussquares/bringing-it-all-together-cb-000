@@ -23,6 +23,10 @@ def self.create_table
 end
 
 def self.drop_table
+  sql = <<-SQL
+  DROP TABLE dogs
+  SQL
+  DB[:conn].execute(sql)
 end
 
 
