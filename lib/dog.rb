@@ -62,7 +62,7 @@ def self.find_or_create_by(name:, breed:)
   AND
   breed = (?)
   SQL
-  info = DB[:conn].execute(sql, name, breed)[0]
+  info = DB[:conn].execute(sql, name, breed)
 end
 
 end
