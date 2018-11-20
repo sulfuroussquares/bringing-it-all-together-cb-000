@@ -41,7 +41,7 @@ def save
   self
 end
 
-def create
+def self.create
 end
 
 
